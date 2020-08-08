@@ -52,8 +52,7 @@ class Song
    data = info.split(" - ")
    song.artist_name = data[0]
   song.name = data[1]
-  binding.pry
-  
+
   end
   
   def self.create_from_filename(filename)
