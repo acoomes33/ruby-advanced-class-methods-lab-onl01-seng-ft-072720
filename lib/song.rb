@@ -1,3 +1,4 @@
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -50,6 +51,7 @@ class Song
     info = filename.slice!(".mp3")
    data = info.split(" - ")
    song.artist_name = data[0]
+   binding.pry
   song.name = data[1]
   
   end
